@@ -7,7 +7,7 @@ spec:
   # Git generator scans the repo and generates an Application for each matching directory
   generators:
     - git:
-        repoURL: https://github.com/<your-username>/argocd-demos.git
+        repoURL: https://github.com/sagarcjain/argocd-demos.git
         revision: main
         # 'directories' accepts globs; each matched path becomes an entry
         directories:
