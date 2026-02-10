@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: demo-cluster
+  name: in-cluster
   namespace: argocd
 spec:
   # Cluster generator will iterate over clusters registered in ArgoCD (via `argocd cluster add`)
   generators:
-    - clusters: https://kubernetes.default.svc   # empty object => include all registered clusters (you can filter with labelSelectors)
+    - clusters: { https://kubernetes.default.svc }   # empty object => include all registered clusters (you can filter with labelSelectors)
   template:
     metadata:
       # Use the cluster name ({{name}}) to create unique app names per cluster
