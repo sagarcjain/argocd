@@ -19,7 +19,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/<your-username>/argocd-demos.git
+        repoURL: https://github.com/sagarcjain/argocd-demos.git
         targetRevision: main
         path: '{{path}}'            # 'path' is the full matched path (e.g., 'git_generator/apache')
       destination:
